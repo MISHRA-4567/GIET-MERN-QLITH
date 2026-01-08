@@ -1,0 +1,31 @@
+body {
+    background-color:lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .frame {
+    background-color:goldenrod; 
+    padding: 40px;
+  } 
+  .inner-frame {
+    background-color: lightgray; 
+    padding: 50px 100px;
+    text-align: center;
+  } 
+  h1 {
+    background-color: black;
+    color: lightcoral;
+    padding: 10px 60px;
+    font-family: 'Times New Roman',serif;
+    margin-bottom: 20px;
+  } 
+  p {
+    background-color: black;
+    color: lightcoral;
+    padding: 10px 30px;
+    font-family: 'Times New Roman',serif;
+    margin: 0;
+  }
