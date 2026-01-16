@@ -18,15 +18,37 @@
             <h1 class="text-3xl font-bold mb-6">Search Movies</h1>
             <div class="flex gap-3">
                 <input type="text" placeholder="Search Movies ..."
-                class="flex-1 px-4 py-3 rounded border outline - none focus:ring-red-500">
-                <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded">Search</button>
+                class="flex-1 px-4 py-3 rounded border outline - none focus:ring-red-500"
+                id="search-input">
+                <button id="search-btn" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded">Search</button>
             </div>
         </div>
     </section>
     <section class="px-6 py-20">
-        <div id="movies-container" class="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div id="movies-container" class="max-w-7xl mx-grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         </div>
     </section>
+
+    <div id="movie-modal"
+    class="fixed inset-0 bg-black/60 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-lg w-full p-6 relative">
+             <button class="absolute top-2 right-2 text-xl" onclick="closeModal()">
+                <i class="fa-solid fa-plus"></i>
+
+             </button>
+
+             <div id="modal-content">
+                </div>
+             </div>
+        </div>
+
+        <img src=""alt="" class="w-full h-64 object-cever rounded mb-4">
+        <h2 class="text-xl font-bold mb-2">Title</h2>
+        <p class="text-sm mb-2">Year</p>
+        <p class="text-sm mb-2">Genre</p>
+        <p class="text-sm mb-2">Rating</p>
+        <p class="text-sm mb-2">Plot</p>
+
     <script src="movies.js"></script>
 </body>
 </html>
